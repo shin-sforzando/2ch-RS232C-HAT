@@ -4,6 +4,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/shin-sforzando/2ch-RS232C-HAT)](https://github.com/shin-sforzando/2ch-RS232C-HAT/graphs/commit-activity)
 [![CI](https://github.com/shin-sforzando/2ch-RS232C-HAT/actions/workflows/ci.yml/badge.svg)](https://github.com/shin-sforzando/2ch-RS232C-HAT/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/shin-sforzando/2ch-RS232C-HAT/branch/main/graph/badge.svg?token=TDCVLUJ4RF)](https://codecov.io/gh/shin-sforzando/2ch-RS232C-HAT)
+[![GitHub Pages](https://github.com/shin-sforzando/2ch-RS232C-HAT/actions/workflows/pages.yml/badge.svg)](https://shin-sforzando.github.io/2ch-RS232C-HAT/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 

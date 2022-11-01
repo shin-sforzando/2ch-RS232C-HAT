@@ -4,7 +4,6 @@
 [![Last Commit](https://img.shields.io/github/last-commit/shin-sforzando/2ch-RS232C-HAT)](https://github.com/shin-sforzando/2ch-RS232C-HAT/graphs/commit-activity)
 [![CI](https://github.com/shin-sforzando/2ch-RS232C-HAT/actions/workflows/ci.yml/badge.svg)](https://github.com/shin-sforzando/2ch-RS232C-HAT/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/shin-sforzando/2ch-RS232C-HAT/branch/main/graph/badge.svg?token=TDCVLUJ4RF)](https://codecov.io/gh/shin-sforzando/2ch-RS232C-HAT)
-[![GitHub Pages](https://github.com/shin-sforzando/2ch-RS232C-HAT/actions/workflows/pages.yml/badge.svg)](https://shin-sforzando.github.io/2ch-RS232C-HAT/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -14,7 +13,9 @@
 |                                      Screenshot 1                                      |                                      Screenshot 2                                      |
 
 <!-- Synopsis -->
-**2ch-RS232C-HAT** is a template repository for using Docker & Python.
+Create a useful tools for debugging RS-232C serial communications using [2ch-RS232C-HAT](https://www.waveshare.com/2-ch-rs232-hat.htm).
+
+![2022-11-01 21 41 26 www waveshare com e47b434a2467](https://user-images.githubusercontent.com/32637762/199235202-9040a621-a715-46f6-afad-e3b84a7620e7.png)
 
 ## *Use this template*
 
@@ -22,6 +23,7 @@
 - [*Use this template*](#use-this-template)
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
+  - [Setup Raspberry Pi](#setup-raspberry-pi)
   - [First time preparation](#first-time-preparation)
     - [Init](#init)
     - [Reveal Secrets](#reveal-secrets)
@@ -76,6 +78,10 @@ sphinx               文書
 clean                掃除
 help                 助言
 ```
+
+### Setup Raspberry Pi
+
+(T. B. D.)
 
 ### First time preparation
 

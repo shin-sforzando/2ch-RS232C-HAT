@@ -23,6 +23,7 @@
     "toolsai",
     "tqdm",
     "venv",
+    "Waveshare",
     "xdist",
     "yzhang"
   ],

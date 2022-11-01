@@ -6,6 +6,7 @@
     "CODECOV",
     "codeql",
     "commitizen",
+    "direnv",
     "dotenv",
     "lefthook",
     "loguru",
@@ -21,6 +22,8 @@
     "sider",
     "toolsai",
     "tqdm",
+    "venv",
+    "xdist",
     "yzhang"
   ],
   "python.formatting.provider": "black",
@@ -30,6 +33,5 @@
     "source.organizeImports": true
   },
   "python.linting.enabled": true,
-  "restructuredtext.confPath": "${workspaceFolder}/docs",
   "esbonio.sphinx.confDir": "${workspaceFolder}/docs"
 }

@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
 
-import http.server
+import curses
+import time
 
 import pysnooper
 
-from src import logger, logger_timing
-
-HOST: str = "0.0.0.0"
-"""str: Listening Host."""
-PORT: int = 8000
-"""int: Listening Port."""
-
-Handler = http.server.SimpleHTTPRequestHandler
+from src import logger_timing
 
 
 @pysnooper.snoop()
@@ -22,9 +16,19 @@ def main() -> None:
     Todo:
         - Rewrite the actual logics.
     """
-    with http.server.HTTPServer((HOST, PORT), Handler) as httpd:
-        logger.info(f"Listening on {HOST}:{PORT} ...")
-        logger.info(httpd.serve_forever())
+    try:
+        stdscr = curses.initscr()
+        curses.noecho()
+        for t in range(10):
+            stdscr.clear()
+            stdscr.addstr(0, 0, f"Program will be terminated after {10-t} [s].")
+            stdscr.refresh()
+            time.sleep(1)
+    except KeyboardInterrupt:
+        raise
+    finally:
+        curses.echo()
+        curses.endwin()
 
 
 if __name__ == "__main__":

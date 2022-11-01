@@ -535,13 +535,8 @@ modules.xml
 
 ### direnv ###
 .direnv
-.envrc
 
 # End of https://www.toptal.com/developers/gitignore/api/git,osx,windows,linux,python,pycharm+all,visualstudiocode,node,yarn,data,direnv
-
-### Snyk ###
-.dccache
-
 
 ### Git Secret ###
 .gitsecret/keys/random_seed

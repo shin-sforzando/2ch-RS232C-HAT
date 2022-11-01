@@ -5,7 +5,8 @@ exclude =
     .vscode,
     __pycache__,
     docs,
-    logs
+    logs,
+    venv
 ignore = W503
 max-complexity = 10
 max-line-length = 88

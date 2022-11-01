@@ -13,9 +13,3 @@ pre-commit:
       run: make test {all_files} && git add tests
     document:
       run: make doc && git add docs
-
-pre-push:
-  parallel: true
-  commands:
-    secretlint:
-      run: docker run --platform linux/amd64 -v `pwd`:`pwd` -w `pwd` --rm -it secretlint/secretlint secretlint "**/*"

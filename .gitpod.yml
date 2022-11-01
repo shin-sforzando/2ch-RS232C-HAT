@@ -1,0 +1,23 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      eval $(gp env -e)
+  - command: |
+      make
+
+ports:
+  - port: 8000
+    visibility: private
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
+    - ms-python.python
+    - DavidAnson.vscode-markdownlint
+    - EditorConfig.editorconfig
+    - shd101wyy.markdown-preview-enhanced
+    - streetsidesoftware.code-spell-checker
+    - yzhang.markdown-all-in-one

@@ -12,6 +12,14 @@ src.COM module
    :undoc-members:
    :show-inheritance:
 
+src.check\-loop module
+----------------------
+
+.. automodule:: src.check-loop
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 src.main module
 ---------------
 

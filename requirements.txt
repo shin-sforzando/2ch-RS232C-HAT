@@ -1,4 +1,5 @@
 # for prod
+pyserial
 python-dotenv
 tqdm
 # for dev

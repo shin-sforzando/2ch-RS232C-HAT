@@ -4,6 +4,14 @@ src package
 Submodules
 ----------
 
+src.COM module
+--------------
+
+.. automodule:: src.COM
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 src.main module
 ---------------
 

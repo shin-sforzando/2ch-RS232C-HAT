@@ -25,6 +25,9 @@ Create a useful tools for debugging RS-232C serial communications using [2ch-RS2
 - [Prerequisites](#prerequisites)
 - [How to](#how-to)
   - [Setup Raspberry Pi](#setup-raspberry-pi)
+    - [Pin Assign](#pin-assign)
+    - [`/boot/config.txt`](#bootconfigtxt)
+    - [Install Packages via Apt](#install-packages-via-apt)
   - [First time preparation](#first-time-preparation)
     - [Init](#init)
     - [Reveal Secrets](#reveal-secrets)
@@ -82,7 +85,30 @@ help                 助言
 
 ### Setup Raspberry Pi
 
-(T. B. D.)
+#### Pin Assign
+
+2-CH_RS232_HAT      =>    RPI(BCM)
+VCC                 ->    3.3V/5V
+GND                 ->    GND
+SCLK                ->    21
+MISO                ->    24
+MOSI                ->    20
+CS                  ->    18
+IRQ                 ->    24
+
+#### `/boot/config.txt`
+
+```/boot/config.txt
+dtoverlay=sc16is752-spi1,int_pin=24
+```
+
+#### Install Packages via Apt
+
+```shell
+sudo apt-get install python3-pip
+sudo apt-get install python3-serial
+sudo pip3 install RPi.GPIO serial pyserial
+```
 
 ### First time preparation
 

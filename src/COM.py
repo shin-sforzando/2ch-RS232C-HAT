@@ -4,7 +4,7 @@ import serial
 class COM:
     def __init__(
         self,
-        port="/dev/ttyS0",
+        port="/dev/ttySC0",
         baudrate=115200,
         parity=serial.PARITY_NONE,
         stopbits=serial.STOPBITS_ONE,

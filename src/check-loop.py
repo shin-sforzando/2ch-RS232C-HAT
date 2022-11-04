@@ -6,10 +6,10 @@ from COM import COM
 
 
 def main():
-    logger.add("check-loop_{time}.log")
+    logger.add("logs/check-loop_{time}.log")
 
-    s1 = COM(port="/dev/ttyS0", baudrate=460800)
-    s2 = COM(port="/dev/ttyS1", baudrate=460800)
+    s1 = COM(port="/dev/ttySC0", baudrate=460800)
+    s2 = COM(port="/dev/ttySC1", baudrate=460800)
 
     try:
         logger.info("Start Checking Loop")

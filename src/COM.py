@@ -9,8 +9,6 @@ class COM:
         parity=serial.PARITY_NONE,
         stopbits=serial.STOPBITS_ONE,
     ):
-        self.port = port
-        self.baudrate = baudrate
         self.ser = serial.Serial(
             port=port, baudrate=baudrate, parity=parity, stopbits=stopbits, timeout=0.1
         )

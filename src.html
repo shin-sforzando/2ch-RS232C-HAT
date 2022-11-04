@@ -44,6 +44,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">2ch-RS232C-HAT</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">src package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.COM">src.COM module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.COM.COM"><code class="docutils literal notranslate"><span class="pre">COM</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#module-src.main">src.main module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#src.main.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
 </ul>
@@ -75,9 +79,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="modules.html">2ch-RS232C-HAT</a> &raquo;</li>
-      <li>src package</li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">2ch-RS232C-HAT</a></li>
+      <li class="breadcrumb-item active">src package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/src.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -91,6 +95,40 @@
 <h1>src package<a class="headerlink" href="#src-package" title="Permalink to this heading"></a></h1>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-src.COM">
+<span id="src-com-module"></span><h2>src.COM module<a class="headerlink" href="#module-src.COM" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.COM.COM">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.COM.</span></span><span class="sig-name descname"><span class="pre">COM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/dev/ttyS0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baudrate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">115200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'N'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stopbits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/COM.html#COM"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.COM.COM" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.COM.COM.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/COM.html#COM.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.COM.COM.close" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.COM.COM.receive">
+<span class="sig-name descname"><span class="pre">receive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/COM.html#COM.receive"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.COM.COM.receive" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.COM.COM.receiveByte">
+<span class="sig-name descname"><span class="pre">receiveByte</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/COM.html#COM.receiveByte"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.COM.COM.receiveByte" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.COM.COM.sendByte">
+<span class="sig-name descname"><span class="pre">sendByte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/COM.html#COM.sendByte"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.COM.COM.sendByte" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.COM.COM.sendString">
+<span class="sig-name descname"><span class="pre">sendString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/COM.html#COM.sendString"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.COM.COM.sendString" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-src.main">
 <span id="src-main-module"></span><h2>src.main module<a class="headerlink" href="#module-src.main" title="Permalink to this heading"></a></h2>

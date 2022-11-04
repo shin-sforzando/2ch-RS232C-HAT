@@ -14,12 +14,16 @@ def main():
     try:
         logger.info("Start Checking Loop")
         while True:
-            s1.sendString("Hello")
+            s1.sendString("Hello\r\n")
             s2_received = s2.receive()
-            print(f"{s2_received}: {'OK' if s2_received == b'Hello' else 'NG'}")
-            s2.sendString("World")
+            s2_check = s2_received == b"Hello\r\n"
+            logger.info(f"{s2_received=}: {'OK' if s2_check else 'NG'}")
+
+            s2.sendString("World\r\n")
             s1_received = s1.receive()
-            print(f"{s1_received}: {'OK' if s1_received == b'Hello' else 'NG'}")
+            s1_check = s1_received == b"World\r\n"
+            logger.info(f"{s1_received=}: {'OK' if s1_check else 'NG'}")
+
             time.sleep(1)
     except KeyboardInterrupt:
         logger.info("Exiting...")

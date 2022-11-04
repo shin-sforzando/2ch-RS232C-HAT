@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath("../"))
 
 # -- Project information -----------------------------------------------------
 
-project = "python-boilerplate"
+project = "2ch-RS232C-HAT"
 copyright = "2022, sforzando LLC. and Inc."
 author = "sforzando LLC. and Inc."
 

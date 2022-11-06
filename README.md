@@ -87,14 +87,14 @@ help                 助言
 
 #### Pin Assign
 
-2-CH_RS232_HAT      =>    RPI(BCM)
-VCC                 ->    3.3V/5V
-GND                 ->    GND
-SCLK                ->    21
-MISO                ->    24
-MOSI                ->    20
-CS                  ->    18
-IRQ                 ->    24
+- 2-CH_RS232_HAT => RPI(BCM)
+- VCC            -> 3.3V/5V
+- GND            -> GND
+- SCLK           -> 21
+- MISO           -> 24
+- MOSI           -> 20
+- CS             -> 18
+- IRQ            -> 24
 
 #### `/boot/config.txt`
 

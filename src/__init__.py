@@ -45,8 +45,12 @@ def get_logger(
         f"logs/{file_prefix}{{time:YYYYMMDD}}{file_postfix}.log",
         rotation="24h",
         level=level,
+        enqueue=True,
     )
     logger.add(lambda msg: tqdm.write(msg, end=""), colorize=True, level=level)
+
+    logger.level("COM1", no=25, color="<blue><bold>")
+    logger.level("COM2", no=25, color="<green><bold>")
     return logger
 
 

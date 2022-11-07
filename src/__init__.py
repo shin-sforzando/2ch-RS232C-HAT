@@ -49,8 +49,9 @@ def get_logger(
     )
     logger.add(lambda msg: tqdm.write(msg, end=""), colorize=True, level=level)
 
-    logger.level("COM1", no=25, color="<blue><bold>")
-    logger.level("COM2", no=25, color="<green><bold>")
+    logger.level("COM1", no=31, color="<blue><bold>")
+    logger.level("COM2", no=32, color="<green><bold>")
+
     return logger
 
 

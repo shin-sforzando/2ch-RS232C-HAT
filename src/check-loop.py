@@ -3,12 +3,12 @@ import time
 from COM import COM
 from src import get_logger, logger_timing
 
+logger = get_logger()
+
 
 @logger_timing()
 def main():
     """Check by looping the serial cable."""
-
-    logger = get_logger()
 
     s1 = COM(port="/dev/ttySC0", baudrate=460800)
     s2 = COM(port="/dev/ttySC1", baudrate=460800)

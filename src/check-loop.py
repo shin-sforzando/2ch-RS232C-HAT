@@ -1,9 +1,7 @@
 import time
 
 from COM import COM
-from src import get_logger, logger_timing
-
-logger = get_logger()
+from src import logger, logger_timing
 
 
 @logger_timing()
